@@ -139,7 +139,7 @@
 
                             // Update coordinates display
                             document.getElementById('thingspeak-coordinates').innerText = 
-                                `ThingSpeak: Latitude: ${thingspeakLat}, Longitude: ${thingspeakLon}`;
+                                `Tracked Device: Latitude: ${thingspeakLat}, Longitude: ${thingspeakLon}`;
 
                             // Update polyline and distance
                             updatePolylineAndDistance();
@@ -162,7 +162,7 @@
 
                         // Update coordinates display
                         document.getElementById('device-coordinates').innerText = 
-                            `Device: Latitude: ${deviceLat}, Longitude: ${deviceLon}`;
+                            `Your device: Latitude: ${deviceLat}, Longitude: ${deviceLon}`;
 
                         // Center map on device location initially
                         map.setView([deviceLat, deviceLon], 18);
