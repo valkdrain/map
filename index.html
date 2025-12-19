@@ -133,7 +133,7 @@ const redMarkerIcon = L.icon({
         // Create a marker for the user's location with the custom icon
         const marker = L.marker([0, 0], { icon: redMarkerIcon }).addTo(map);
 
-        // Define the polygon coordinates (example coordinates)
+        // Define the polygon coordinates (covering MIT, MU campus)
         const polygonCoords = [
             [24.754722, 93.926744],
             [24.754734, 93.926655],
@@ -151,7 +151,7 @@ const redMarkerIcon = L.icon({
             [24.754583, 93.926733]
         ];
 
-        // Create a polygon on the map
+        // Create a polygon on the map (GEOFENCING)
         const polygon = L.polygon(polygonCoords, { color: 'yellow', fillOpacity: 0, weight: 2 }).addTo(map);
 
         // Function to check if the point is inside the polygon
